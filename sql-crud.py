@@ -100,8 +100,8 @@ paul_fitzpatrick = Programmer(
 # session.commit()
 
 # updating a single record
-# programmer = session.query(Programmer).filter_by(id=102).first()
-# programmer.famous_for = "World President"
+programmer = session.query(Programmer).filter_by(id=126).first()
+programmer.famous_for = "World President"
 
 
 # updating multipe records
@@ -137,10 +137,10 @@ paul_fitzpatrick = Programmer(
  
 
 # delete multiple records
-programmers = session.query(Programmer)
-for programmer in programmers:
-    session.delete(programmer)
-    session.commit()
+# programmers = session.query(Programmer)
+# for programmer in programmers:
+#     session.delete(programmer)
+#     session.commit()
 
 # query the database to find all Programmers
 programmers = session.query(Programmer)
